@@ -5,7 +5,7 @@ function App() {
   
   return (
     <>
-      
+      <p>ГОТОВО</p>
     </>
   )
 }
