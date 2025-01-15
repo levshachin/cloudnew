@@ -13,9 +13,11 @@ function App() {
       <Modal/>
       <div className='Main'>
         <Header/>
-        <SideBar/>
-        <SortBar/>
-        <ServersList/>
+        <div className='mainservers'>
+          <SideBar/>
+          <SortBar/>
+          <ServersList/>
+        </div>
       </div>
     </>
   )
