@@ -63,6 +63,7 @@ header{
     font-size: 5vh;
     font-family: "Roboto", serif;
     font-weight: 700;
+    margin-left: 10px;
 }
 .Main{
     position: relative;
@@ -145,4 +146,35 @@ span{
     top:20px;
     font-size: small;
     color: #CFCFCF;
+}
+ul{
+    list-style: none;
+    margin-left:60px;
+    font-weight:600;
+}
+li{
+    display: inline;
+    margin: 20px;
+}
+li:hover{
+    color:aquamarine;
+    cursor: pointer;
+    /* pointer-events: visibleFill; */
+}
+.userinfo{
+    position: absolute;
+    right:20px;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-self: flex-end; */
+}
+.addmoney{
+    /* display: flex; */
+    /* justify-items: center; */
+    /* align-items: center; */
+    border: 1px solid #f9f9f9;
+    border-radius: 2rem;
+    width: 20px;
 }
