@@ -10,9 +10,9 @@ export default function Header(){
             <li>Документация</li>
         </ul>
         <div className='userinfo'>
-            <img src={add} alt="" width={15}/>
+            <img src={add} alt="" width={15} className='addMoney'/>
             <span>0 ₽</span>
-            <img src={user} alt="" width={35}/>
+            <img src={user} alt="" width={35} className='userAuth'/>
         </div>
     </header>
     )
