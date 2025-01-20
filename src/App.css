@@ -42,6 +42,10 @@ header{
 }
 .SortBar{
     position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
     width:760px;
     height: 5%;
     border-radius: 8px;
@@ -140,8 +144,9 @@ span{
     border-radius: 4px;
     background-color: transparent;
     transition: 0.1s;
+    cursor: pointer;
 }
-.createButton:active{
+.createButton:hover{
     box-shadow:  0px 0px 5px white;
 }
 .price{
@@ -199,12 +204,6 @@ li:hover{
 .nameCriteria{
     padding-left: 10px;
 }
-.parametr1{
-    
-}
-.parametr2{
-    
-}
 .addMoney{
     cursor: pointer;
     border-radius: 2rem;
@@ -249,4 +248,106 @@ select{
 }
 option{
     background-color: #282828;
+}
+.SortBar select{
+    width: auto;
+    /* text-align: center; */
+}
+.modal{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.close{
+    top:10px;
+    left:10px;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 1rem;
+    user-select: none;
+  }
+form{
+    position: relative;
+    top:35px;
+    font-size: 13px;
+    width: 100%;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* gap: 10px; */
+  }
+dialog{
+    z-index: -1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 450px;
+    border-radius: 4px;
+    background-color: #282828;
+    align-self: center;
+    justify-self: center;
+    border: 0px;
+  }
+form .submit, .form select{
+    border-radius: 4px;
+    padding: 10px;
+    width: 90%;
+    height: 40px;
+    background-color: #3e3e3e;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
+form label{
+    font-size: 12px;
+    width: 90px;
+    position: relative;
+    right:115px;
+    top:10px;
+}
+
+.register{
+    position: absolute;
+    top:20px;
+    font-weight: 600;
+}
+.submitA{
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px;
+    width: 90%;
+    height: 40px;
+    color: black;
+    background-color: #f9f9f9;
+    border: 1px solid transparent;
+    font-weight: 600;
+    font-size: 17px;
+}
+dialog div{
+    padding: 7px;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 15px;
+    gap: 10px;
+}
+dialog div span{
+    color: orange;
+    cursor: pointer;
+    
+}
+dialog div span:hover{
+    text-shadow: 0px 0px 3px #f9f9f9;
 }

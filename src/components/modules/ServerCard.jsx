@@ -1,4 +1,4 @@
-// import styles from './ServerCard.module.css'
+import PropTypes from 'prop-types';
 export default function ServerCard({serverFeature, ...props}){
     return(
         <div className="ServerCard">
@@ -13,3 +13,8 @@ export default function ServerCard({serverFeature, ...props}){
         </div>
     )
     }
+ServerCard.propTypes = {
+        serverFeature: PropTypes.arrayOf(PropTypes.number).isRequired,
+        serverName: PropTypes.string.isRequired,
+        serverPrice: PropTypes.number.isRequired,
+      };
