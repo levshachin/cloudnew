@@ -6,6 +6,28 @@
     color: #f9f9f9;
     transition: 0.2s;
 }
+.ServersList::-webkit-scrollbar {
+    width: 10px;
+  }
+  .ServersList::-webkit-scrollbar-track {
+    background: transparent;  /* Цвет дорожки */
+  }
+  .ServersList::-webkit-scrollbar-thumb {
+    background-color: #3e3e3e;  /* Цвет бегунка */
+    border-radius: 4px;  /* Округление бегунка */
+    border: 3px solid #282828;  /* Оформление границ бегунка */
+  }
+  .SideBar::-webkit-scrollbar {
+    width: 10px;
+  }
+  .SideBar::-webkit-scrollbar-track {
+    background: transparent;  /* Цвет дорожки */
+  }
+  .SideBar::-webkit-scrollbar-thumb {
+    background-color: #3e3e3e;  /* Цвет бегунка */
+    border-radius: 4px;  /* Округление бегунка */
+    border: 3px solid #282828;  /* Оформление границ бегунка */
+  }
 :root{
     --backmain: #3e3e3e;
     --backplace: #282828;
@@ -38,7 +60,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     overflow-y: scroll;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
 }
 .SortBar{
     position: absolute;
@@ -64,7 +86,7 @@ header{
     overflow-y: scroll;
     padding-top: 5px;
     padding-bottom: 5px;
-    scrollbar-width: none;
+    /* scrollbar-width: none; */
 }
 .Name{
     padding-left: 10px;
