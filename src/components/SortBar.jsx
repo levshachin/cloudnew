@@ -1,13 +1,18 @@
-export default function SortBar(){
+export default function SortBar({parameter, setParameters, ...props}){
+    const handleChange = (e, field) => {
+        setParameters({
+            ...parameter,
+            [field]: e.target.value
+        });
+    };
     return(
         <div className="SortBar">
             <span>Сортировка</span>
-            <select name="" id="">
-                <option value="">Лучшее совпадение</option>
-                <option value="">Сначала дороже</option>
-                <option value="">Сначала дешевле </option>
-                <option value="">По возрастанию рейтинга</option>
-                <option value="">По убыванию рейтинга</option>
+            <select value={parameter.sort_order} onChange={(e) => handleChange(e, 'sort_order')}>
+                <option value="asc">Сначала дешевле</option>
+                <option value="desc">Сначала дороже </option>
+                <option value="asc">По возрастанию рейтинга</option>
+                <option value="desc">По убыванию рейтинга</option>
             </select>
         </div>
     )

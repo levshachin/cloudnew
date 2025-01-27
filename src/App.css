@@ -75,9 +75,11 @@ header{
 }
 .ServersList{
     position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* flex-wrap:wrap; */
+    /* justify-content: center; */
+    /* align-items: center;     */
     height: 94%;
     width:760px;
     border-radius: 8px;
@@ -86,6 +88,7 @@ header{
     overflow-y: scroll;
     padding-top: 5px;
     padding-bottom: 5px;
+    padding-left: 5px;
     /* scrollbar-width: none; */
 }
 .Name{
@@ -110,7 +113,7 @@ header{
     justify-content: space-between;
     width: 97%;
     height: 90px;
-    margin: 5px;
+    margin: 10px;
     border-radius: 8px;
     font-family: "Roboto", serif;
     border: 1px solid transparent;

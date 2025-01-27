@@ -2,9 +2,7 @@
 import './App.css'
 import Modal from './components/Modal'
 import Header from './components/Header'
-import SideBar from './components/SideBar'
-import ServersList from './components/ServersList'
-import SortBar from './components/SortBar'
+import FalseComponent from './components/FalseComponent'
 
 function App() {
   
@@ -14,9 +12,7 @@ function App() {
       <div className='Main'>
         <Header/>
         <div className='mainservers'>
-          <SideBar/>
-          <SortBar/>
-          <ServersList/>
+          <FalseComponent/>
         </div>
       </div>
     </>
